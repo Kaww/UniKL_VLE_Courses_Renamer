@@ -1,0 +1,11 @@
+{
+    "name": "UniKL VLE Courses Renamer",
+    "description" : "On VLE, Courses are identified by the teacher name which I find confusing. This extension will replace the teacher names by the courses names.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["webNavigation", "tabs"],
+    "content_scripts": [{
+        "matches": ["https://vle.unikl.edu.my/*"],
+        "js": ["content_script.js"]
+    }]
+}
